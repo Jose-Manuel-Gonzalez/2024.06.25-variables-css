@@ -2,6 +2,52 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #111;
-  font-family: sans-serif;
+  min-height: 500vh;
+  margin: 0;
+  padding: 0;
+  //background-color: var(--primary-color)
+  background-color: var(--bg-color)
+
+}
+
+#scrollDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background-color: red;
+}
+
+#btn{
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+}
+
+#twenty{
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  position: absolute;
+}
+
+.box-scroll{
+  width: var(--box-width);
+  height: 50px;
+  background-color: blue;
+  position: fixed;
+}
+
+.scroll-count{
+  position: fixed;
+}
+
+.box-mouse{
+  position: fixed;
+  top: var(--top);
+  left: var(--left);
+  width: 80px;
+  height: 80px;
+  background-color: brown;
+  pointer-events: none;
 }
